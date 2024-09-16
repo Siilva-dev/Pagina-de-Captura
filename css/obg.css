@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrad";
+    }
+
+html{
+    height: 100vh;
+
+
+}
+
+body {
+    line-height: 1.6;
+    background-image: url(/img/obgdesk.webp);
+    background-size: cover; 
+    background-position: center; 
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+    
+}
+
+h1 {
+    font-size: 4.5em;
+    color: #d4ff00;
+}
+
+h3 {
+    font-size: 1.6em;
+    color: #9200c2;
+    
+}
+
+p {
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 0;
+}
+
+.step {
+    border: 1px solid #8400ff;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 40%;
+}
+
+.step-1 {
+    background-color: #1e033672;
+    backdrop-filter: blur(3px);
+}
+
+.step-2 {
+    background-color: #1e033672;
+    backdrop-filter: blur(3px);
+}
+
+.btn-join-community {
+    background-color: #00ff049e; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    position: relative;
+    top: 7px;
+    text-decoration: none;
+    
+}

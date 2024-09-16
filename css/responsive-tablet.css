@@ -1,0 +1,80 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+    .body {
+        overflow-x: hidden;
+    }
+    
+    
+    img[src="img/app.webp"] {
+    
+    height: auto;
+    top: -279px;
+    right: 0%;
+    display: block;
+    max-width: 190%;
+    width: 478px;
+    overflow: hidden;
+    position: relative;  
+    left: -20%;
+    }
+
+    .carousel-container {
+        width: 230px;
+        overflow: hidden;
+        position: relative;  
+        left: 28%;
+        top: 170px;
+    
+    
+    }
+    .segunda-secao .container {
+        text-align: center;
+        padding: 0%;
+        margin-top: 0%;
+        margin-left: 0%;
+        padding-left: 3%;
+        margin-right: 0%;
+        position: relative;
+        top: 59px;
+        right: 12px;
+        border-radius: 0%;
+    }
+    .segunda-secao {
+        background-image: url(/img/funds2.webp);
+        background-size: cover;
+        background-position: center; 
+        height: 100vh;
+    
+    }
+
+.input-box {
+
+}
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 7%;
+    margin-top: -10%;
+    padding-left: 0%;
+    margin-left: 0%;
+    padding-right: 0%;
+    margin-right: 0%;
+}
+.titulo h1 {
+    top: 50%;
+    margin: 6px -36px;
+    color: #ffffffb0;
+    font-size: 24px;
+}
+
+
+}
+.titulo span {
+    position: relative;
+    left: 14%;
+    margin: 0%;
+    font-size: 70%;
+}

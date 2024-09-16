@@ -1,0 +1,37 @@
+@media screen and (max-width: 760px) {
+    .step-1, .step-2 {
+        background-color: #1e033672;
+        backdrop-filter: blur(3px);
+        width: 100%; 
+    }
+    
+    .steps {
+        display: flex;
+        flex-direction: column; /* Alteração aqui */
+        padding: 4rem 0;
+    }
+    
+    .step {
+        border: 1px solid #8400ff;
+        border-radius: 5px;
+        padding: 0.5rem;
+        width: 100%; 
+        margin-bottom: 1rem; 
+    }
+    
+    .btn-join-community {
+        text-decoration: none;
+        display: block; 
+        width: 100%; 
+        margin-top: 1.1rem;
+        position: relative;
+        top: -4px; 
+    }
+
+    h1 {
+        position: relative;
+        font-size: 4.5em;
+        color: #d4ff00;
+        left: -16px;
+    }
+}

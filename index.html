@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/media.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive-tablet.css" type="text/css">
+    <link rel="icon" href="img/logo2.png" type="image/png" />
+    <title>Agência Kyng</title>  
+    
+ </head>
+<body>
+  <section>
+    <div class="elemento">
+        <img src="img/prosocial.webp" alt="">
+    </div>
+    <div class="conteiner">
+        <img src="img/logo.png">
+       <div class="flex">
+            <div class="titulo">
+                <h1>
+                    <p>Transforme suas Redes Sociais em Máquinas de Vendas!</p>
+                    <span>Descubra como Alavancar seu Negócio com Estratégias de Marketing Digital!</span>
+                </h1>
+            </div> <!--titulos-->
+            
+       </div> <!--flex-->
+    </div> <!--conteiner-->
+    
+    <form class="ml-block-form" id="myForm" action="https://assets.mailerlite.com/jsonp/917315/forms/119169931643193158/subscribe" data-code="" method="post" target="_blank">
+        <div class="input-box">
+            <h2>Cadastre-se agora e Receba Acesso Exclusivo à Plataforma de Social Media Marketing!</h2>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="fields[name]" class="form-control" placeholder="Seu nome*" required>
+            </div> <br>
+             
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="fields[email]" class="form-control" placeholder="Seu email*" required>
+            </div><br>
+                
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="fields[phone]" class="form-control" placeholder="seu telefone*" required>
+            </div><br>
+           
+            <button type="submit" class="btn-primary">Quero Receber a Plataforma</button>  
+        </div>
+    </form>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            // Evita o envio padrão do formulário
+            event.preventDefault();
+        
+           
+            var formData = new FormData(this);
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", this.action);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        // O envio foi bem-sucedido, redirecione para a página de obrigado
+                        window.location.href = 'obg/obg.html';
+                    } else {
+                        // Se houver algum erro no envio, você pode lidar com isso aqui
+                        console.error('Erro ao enviar o formulário:', xhr.statusText);
+                    }
+                }
+            };
+            xhr.send(formData);
+        });
+        </script>
+    </section>
+
+    <section  class="segunda-secao">
+        <div class="container">
+            <h1>Resultados Constantes e Garantidos</h1>
+        </div>
+        <div class="carousel-container">
+            <div class="carousel">
+              <img src="img/1.webp" alt="Imagem 1">
+              <img src="img/2.webp" alt="Imagem 2">
+              <img src="img/3.webp" alt="Imagem 3">
+              <img src="img/4.webp" alt="Imagem 4">
+              <img src="img/5.webp" alt="Imagem 5">
+              <img src="img/6.webp" alt="Imagem 6">
+            </div>
+            <button class="prev">Anterior</button>
+            <button class="next">Próxima</button>
+        </div>
+        
+        <img src="img/app.webp">
+    </section>
+
+    <script>
+    const carousel = document.querySelector('.carousel');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    const images = document.querySelectorAll('.carousel img');
+
+    let index = 0;
+
+    function showImage(index) {
+      const offset = -index * 100;
+      carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextImage() {
+      index = (index + 1) % images.length;
+      showImage(index);
+    }
+
+    function prevImage() {
+      index = (index - 1 + images.length) % images.length;
+      showImage(index);
+    }
+
+    nextButton.addEventListener('click', nextImage);
+    prevButton.addEventListener('click', prevImage);
+
+    setInterval(nextImage, 4000);
+</script>
+</body>
+</html>
